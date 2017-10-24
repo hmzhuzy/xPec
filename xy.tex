@@ -1141,7 +1141,7 @@ performance along the line of sight direction.
 \caption{A slice of the density field from the high-resolution simulation. 
 The curvilinear grid shows the Eulerian coordinate of each grid point of the 
 potential isobaric coordinate. The reconstruction works very well within the 
-spherical region though near the spherical boundary there are some artifical 
+spherical region though near the spherical boundary there are some artificial 
 features caused by the discontinuities.}
 \label{fig:mask}
 \end{figure}
@@ -1155,25 +1155,12 @@ Then we perform reconstruction with this density field.
 Figure \ref{fig:mask} shows a slice through the density field. We also plot the 
 Eulerian positions of a uniform grid of potential isobaric coordinates on the
 density field slice. The reconstruction works very well within the spherical
-region though near the spherical boundary there are some artifical features
+region though near the spherical boundary there are some artificial features
 caused by the discontinuities. However, this will cause little degradation of 
 reconstruction as the measure of a 2D boundary is nearly zero in the 3D space.
 
 \section{Reconstruction with halos}
 \label{appendix:D}
-
-\begin{figure*}[tbp]
-\begin{center}
-\includegraphics[width=0.32\textwidth]{0.000anixcc_deltaRsxLs-0_31-1.eps}
-\includegraphics[width=0.32\textwidth]{0.000anixcc_deltaRsxLs-1_31-1.eps}
-\includegraphics[width=0.32\textwidth]{0.000anipk_deltaV_4x.eps}
-\end{center}
-\vspace{-0.7cm}
-\caption{The two-dimensional cross correlation coefficientsof the halo 
-reconstructed field with the linear field $(b_1+f\mu^2)\delta_L(\bmk)$ for
-$\bar{n}=2.77\times10^{-2}$, $2.77\times10^{-3}$, $2.77\times10^{-4}\ (h/\mr{Mpc})^3$ (from left to right), respectively.}
-\label{fig:xcc_ha}
-\end{figure*}
 
 The dark matter field is nearly constant in Lagrangian space, while the halo 
 field is not uniform in Lagrangian space. 
@@ -1213,7 +1200,22 @@ Three halo samples with number densities of $2.77\times10^{-2}$, $2.77\times10^{
 The bias factors are $b_1=0.68$, $0.92$, and $1.44$, respectively.
 We find that the correlation coefficients have the same anisotropic features 
 as the result obtained with the dark matter density field, but the performance 
-degrades with the lower number density.
+degrades with the lower number density. And also the less dense sample suffers
+less from the RSD effect.
+
+\begin{figure*}[tbp]
+\vspace{-0.3cm}
+\begin{center}
+\includegraphics[width=0.32\textwidth]{0.000anixcc_deltaRsxLs-0_31.eps}
+\includegraphics[width=0.32\textwidth]{0.000anixcc_deltaRsxLs-1_31.eps}
+\includegraphics[width=0.32\textwidth]{0.000anixcc_deltaRsxLs-2_31.eps}
+\end{center}
+\vspace{-0.7cm}
+\caption{The two-dimensional cross correlation coefficientsof the halo 
+reconstructed field with the linear field $(b_1+f\mu^2)\delta_L(\bmk)$ for
+$\bar{n}=2.77\times10^{-2}$, $2.77\times10^{-3}$, $2.77\times10^{-4}\ (h/\mr{Mpc})^3$ (from left to right), respectively.}
+\label{fig:xcc_ha}
+\end{figure*}
 
 \bibliographystyle{apsrev}
 \bibliography{3d}
