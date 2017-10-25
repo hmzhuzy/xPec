@@ -112,7 +112,7 @@ the shift nonlinearities in the observed nonlinear field \cite{2007bao}.
 The linear method is successfully applied to galaxy surveys and improves the
 measurements of the BAO scale \cite{2012nikhil,2012Anderson,2014K,2014Anderson,2014T,2015Ross,2017F,2017R}.
 However, the density field reconstruction methods based on the linearized 
-continuity equation only captures the nonlinear shift terms from large-scale
+continuity equation only captures the shift terms from large-scale
 linear bulk flows \cite{2007ESW,2009PWC,2009NWP,2012TZ,2014Tassev,2016Seo}.
 Recently a new reconstruction method has been proposed by Ref. \cite{2016HMZ}. 
 (See also Refs. \cite{2017Marcel,2017Shi} for different implementations but 
@@ -127,7 +127,7 @@ much better correlation with the linear initial conditions \cite{2016HMZ}.
 These nonlinear methods are expected to substantially improve BAO measurements 
 in the near future.
 
-Most nonlinear reconstruction methods developed recently foucus on improving 
+Most nonlinear reconstruction methods developed recently focus on improving 
 measurements of the linear BAO signal \cite{2016HMZ,2017Marcel,2017Shi,2017US}.
 The current standard reconstruction also only works for reversing the nonlinear
 degradation of the BAO feature in galaxy redshift surverys, though different
@@ -206,7 +206,7 @@ Eulerian position $\bmx$ is
 \rho(\bmx)d^3x=\rho(\bmq)d^3q,
 \eea
 where $\rho(\bmq)\approx constant$. The mass conservation equation predicts the 
-exact nonlinear density $\rho(\bmx)=d^3q/d^3x-1$ at $\bm$ in the absence of 
+exact nonlinear density $\rho(\bmx)=d^3q/d^3x-1$ at $\bmx$ in the absence of 
 shell crossing. Therefore, the key ingredient of Lagrangian perturbation theory
 calculation is to solve the nonlinear displacement field and calculate the 
 Jacobian of the mapping from $\bmq$ to $\bmx$.
@@ -254,7 +254,7 @@ is still limited by the shift nonlinearities in the observed density field.
 In order to remove the nonlinear shift terms induced by the mapping from $\bmq$
 to $\bmx$ and then from $\bmx$ to $\bms$, we can try to invert the nonlinear 
 mapping and solve for the Lagrangian displacement and the shift velocity, which
-are Lagrangian quantities that are not effected by shift terms.
+are Lagrangian quantities that are not affected by shift terms.
 
 The basic idea of nonlinear reconstruction is to build a bijective mapping between the redshift space coordinates $\bms$ and the potential isobaric coordinates $\bmxi$, where $\rho(\bmxi)d^3\xi$ is approximately constant.
 We define a coordinate transformation that is a pure gradient,
@@ -516,7 +516,7 @@ $r_{\delta_r^s\delta_E^s}(k_\perp,k_\parallel)$ between the redshift space recon
 The correlation with this nonlinear field is much better than that with the 
 linear field as expected.
 The redshift space nonlinear displacement divergence represents the best 
-possible posible description of the reconstructed density field.
+possible description of the reconstructed density field.
 
 We find that the cross correlation coefficient with the nonlinear field shows 
 similar anisotropic feature as the cross correlation coefficient with the 
@@ -583,7 +583,7 @@ t_E(\bmk)=\frac{P_{\delta_r^s\delta_E^s}(\bmk)}{P_{\delta_r^s}(\bmk)},
 \eea
 where the subscript $E$ denotes the transfer function recovers the broadband
 power spectrum with respect to the nonlinear field.
-Figure \ref{fig:shape_Ls} shows the power spectrum of the linear transer 
+Figure \ref{fig:shape_Ls} shows the power spectrum of the linear transfer 
 function filtered reconstructed field divided by the linear power spectrum.
 The ratio between the two power spectra is larger than $0.5$ at $k\lesssim0.5\ h/\mr{Mpc}$ for $\mu$ bins around $\mu=0$ and $k\lesssim0.4\ h/\mr{Mpc}$ for
 $\mu$ bins around $\mu=1$. Again, we note a deficit in power along the line of
@@ -809,7 +809,7 @@ large-scale linear displacement field computed from the observed galaxy density
 field with some certain model assumptions like the smoothing scale, galaxy bias
 and growth rate etc \cite{2007bao}. The results depend on the assumed fiducial
 model and have to be tested against different parameter choices, which are 
-computationally expansive \cite{2012nikhil}.
+computationally expensive \cite{2012nikhil}.
 The new reconstruction method directly solves the displacement potential from 
 the observed density field, which is a purely mathematical problem without any
 cosmological dynamics involved.
@@ -838,7 +838,7 @@ density through
 where $W_R(k)$ is a smoothing function with the characteristic scale $R$.
 The smoothing scale should be chosen close to the scale where linear theory 
 breaks down \cite{2015marcel,2015BAOsm,2016Seo}. 
-To make the above linear approximation is valid, the nonlinear density field 
+To make the above linear approximation valid, the nonlinear density field 
 usually needs to be smoothed on scales $\sim10\ \mr{Mpc}/h$ to remove small
 scale nonlinearities. This is because all quantities defined in Eulerian space
 like $\delta(\bmx)$ and $\bmv(\bmx)$ involve very strong shift nonlinearities,
@@ -1027,8 +1027,8 @@ In Fig. \ref{fig:pk_vel}, we show the velocity power spectra for different veloc
 The linear theory can only describe the Lagrangian velocity up to $k\lesssim0.25\ h/\mr{Mpc}$. The nonlinearities dominate on scales where the displacement can 
 still be described by linear theory. The $B$-mode Lagrangian velocity is already
 non-negligible on scales $k\gtrsim1.4\ h/\mr{Mpc}$. 
-This is simply because that the Lagrangian corresponds the most nonlinear 
-contribution to the Lagrangian displacement as we discussed above. 
+This is simply because that the Lagrangian velocity corresponds the most 
+nonlinear contribution to the Lagrangian displacement as we discussed above. 
 
 The fact that the Lagrangian velocity is more nonlinear than the displacement
 implies that it is more important to study the nonlinearity of the velocity
@@ -1074,7 +1074,6 @@ The shift velocity corresponds to the $z$-component of the Lagrangian velocity,
 \eea
 which describes the shift of a particle from the real space position to the 
 redshift space position. We can write the shift velocity as 
-a curl part,
 \bea
 \bmv^s(\bmq)=\bmv_E^s(\bmq)+\bmv^s_B(\bmq),
 \eea
