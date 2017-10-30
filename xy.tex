@@ -464,7 +464,8 @@ scale fluctuations of real space density field.
 \end{center}
 \vspace{-0.7cm}
 \caption{The two-dimensional cross-correlation coefficient of the reconstructed
-density field with the redshift space linear density field.}
+density field $\delta_r^s(\bmk)$ with the redshift space linear density field 
+$\delta_L^s(\bmk)=(1+f\mu^2)\delta_L(\bmk)$.}
 \label{fig:cc_Ls}
 \end{figure}
 
@@ -498,7 +499,8 @@ density field drops faster in these $\mu$ bins.
 \end{center}
 \vspace{-0.7cm}
 \caption{The two-dimensional cross-correlation coefficient of the reconstructed
-    density field with the redshift space nonlinear field.}
+density field $\delta_r^s(\bmk)$ with the redshift space nonlinear field 
+$\delta_E^s(\bmk)=-i\bmk\cdot(\bmp+\bmv^s/aH)(\bmk)$.}
 \label{fig:cc_Es}
 \end{figure}
 
@@ -540,7 +542,9 @@ with the linear field along the line of sight.
 \end{center}
 \vspace{-0.7cm}
 \caption{The shape of the power spectrum for the filtered reconstructed density 
-    field normalized to the linear field.}
+field normalized to the linear field, defined as 
+$P_{\tilde{\delta}_r^s}(\bmk)/P_{\delta_L^s}(\bmk)$, where 
+$\tilde{\delta}_r^s(\bmk)=t_L(\bmk)\delta_r^s(\bmk)$.}
 \label{fig:shape_Ls}
 \end{figure}
 
@@ -550,7 +554,9 @@ with the linear field along the line of sight.
 \end{center}
 \vspace{-0.7cm}
 \caption{The shape of the power spectrum for the filtered reconstructed density
-    field normalized to the nonlinear field.}
+field normalized to the nonlinear field, defined as
+$P_{\tilde{\delta}_r^s}(\bmk)/P_{\delta_E^s}(\bmk)$, where 
+$\tilde{\delta}_r^s(\bmk)=t_E(\bmk)\delta_r^s(\bmk)$.}
 \label{fig:shape_Es}
 \end{figure}
 
@@ -706,7 +712,7 @@ better than for the $z$-component as expected, since the missed $z$-component
 $v_{Bz}^s$ of the $B$-mode shift velocity is much larger than $v_{Bx}^s$ and 
 $v_{By}^s$. Though we can not reconstruct these $B$-mode shift velocities, they
 still change the observed mass distribution used for nonlinear reconstruction; 
-as a result, they will include noises for the reconstructed displacements 
+as a result, they will induce noises for the reconstructed displacements 
 respectively, reducing the correlations with the real $E$-mode displacements. 
 
 \begin{figure}[tbp]
