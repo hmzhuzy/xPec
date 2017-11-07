@@ -383,7 +383,7 @@ field but with much less nonlinearities.
 
 \begin{figure}[tbp]
 \begin{center}
-\includegraphics[width=0.49\textwidth]{map0512-0128_i1500_xz222.eps}
+\includegraphics[width=0.45\textwidth]{map0512-0128_i1500_xz222.eps}
 \end{center}
 \vspace{-0.7cm}
 \caption{A slice of the nonlinear density field from the high resolution 
@@ -394,7 +394,7 @@ field but with much less nonlinearities.
 
 \begin{figure}[tbp]
 \begin{center}
-\includegraphics[width=0.49\textwidth]{map0512-0128_i0900_xz222_rsd3.eps}
+\includegraphics[width=0.45\textwidth]{map0512-0128_i0900_xz222_rsd3.eps}
 \end{center}
 \vspace{-0.7cm}
 \caption{A slice of the nonlinear density field from the high resolution 
@@ -478,7 +478,7 @@ One reason for this is that the Lagrangian velocity $\bmv(\bmq)$ is much more
 nonlinear than the Lagrangian displacement $\bmp(\bmq)$. The Lagrangian 
 displacement is an integral with respect to time of the Lagrangian velocity,
 \bea
-\bmp(\bmq,t)=\int_0^t\bmv(\bmq,t')dt'.
+\bmp(\bmq,\tau)=\int_0^t\bmv(\bmq,\tau')d\tau'.
 \eea
 At higher redshifts the velocity field is more linear than the velocity field 
 at later time. The Lagrangian displacement is a linear combination of velocities
@@ -1002,7 +1002,7 @@ Lagrangian velocity similarly,
 \bea
 \bmv(\bmq)=\bmv_E(\bmq)+\bmv_B(\bmq),
 \eea
-where $\bmv_E=\nabla(\nabla\cdot\bmv)$ and $\bmv_B=\bmv-\bmv_E$. 
+where $\bmv_E=(\bmk\cdot\bmv)\bmk/k^2$ and $\bmv_B=\bmv-\bmv_E$. 
 The $E$-mode displacement can be decomposed into
 \bea
 \bmv_E(\bmq)=\bmv_E^{(l)}(\bmq)+\bmv_E^{(nl)}(\bmq)
