@@ -395,14 +395,14 @@
   \bibinfo{journal}{\mnras} \textbf{\bibinfo{volume}{460}},
   \bibinfo{pages}{2453} (\bibinfo{year}{2016}), \eprint{1511.00663}.
 
-\bibitem[{\citenamefont{{Zhu} et~al.}(2016)\citenamefont{{Zhu}, {Yu}, {Pen},
-  {Chen}, and {Yu}}}]{2016HMZ}
+\bibitem[{\citenamefont{{Zhu} et~al.}(2016{\natexlab{a}})\citenamefont{{Zhu},
+  {Yu}, {Pen}, {Chen}, and {Yu}}}]{2016HMZ}
 \bibinfo{author}{\bibfnamefont{H.-M.} \bibnamefont{{Zhu}}},
   \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{{Yu}}},
   \bibinfo{author}{\bibfnamefont{U.-L.} \bibnamefont{{Pen}}},
   \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{{Chen}}}, \bibnamefont{and}
   \bibinfo{author}{\bibfnamefont{H.-R.} \bibnamefont{{Yu}}},
-  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2016}),
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2016}{\natexlab{a}}),
   \eprint{1611.09638}.
 
 \bibitem[{\citenamefont{{Schmittfull} et~al.}(2017)\citenamefont{{Schmittfull},
@@ -818,16 +818,6 @@
   \bibnamefont{et~al.}, \bibinfo{journal}{\prd} \textbf{\bibinfo{volume}{93}},
   \bibinfo{eid}{082002} (\bibinfo{year}{2016}), \eprint{1510.06442}.
 
-\bibitem[{\citenamefont{{Vargas-Maga{\~n}a}
-  et~al.}(2015)\citenamefont{{Vargas-Maga{\~n}a}, {Ho}, {Fromenteau}, and
-  {Cuesta}}}]{2015BAOsm}
-\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Vargas-Maga{\~n}a}}},
-  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{{Ho}}},
-  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{{Fromenteau}}},
-  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.~J.}
-  \bibnamefont{{Cuesta}}}, \bibinfo{journal}{ArXiv e-prints}
-  (\bibinfo{year}{2015}), \eprint{1509.06384}.
-
 \bibitem[{\citenamefont{{Zhang} et~al.}(2015)\citenamefont{{Zhang}, {Zheng},
   and {Jing}}}]{2015NP1}
 \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{{Zhang}}},
@@ -851,5 +841,13 @@
   \bibinfo{author}{\bibfnamefont{U.-L.} \bibnamefont{{Pen}}},
   \bibinfo{journal}{{\it in preparation}}
   (\bibinfo{year}{2017}{\natexlab{c}}).
+
+\bibitem[{\citenamefont{{Zhu} et~al.}(2016{\natexlab{b}})\citenamefont{{Zhu},
+  {Pen}, and {Chen}}}]{2016HMZ1}
+\bibinfo{author}{\bibfnamefont{H.-M.} \bibnamefont{{Zhu}}},
+  \bibinfo{author}{\bibfnamefont{U.-L.} \bibnamefont{{Pen}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{{Chen}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2016}{\natexlab{b}}),
+  \eprint{1609.07041}.
 
 \end{thebibliography}

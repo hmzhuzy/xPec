@@ -75,11 +75,11 @@ The reconstructed anisotropic field inferred from the nonlinear
 displacement correlates with the linear initial conditions to much smaller
 scales than the redshift space density field.
 The number of linear modes in the density field is improved by a factor of 
-$30\sim40$. 
+$30\sim40$ after reconstruction. 
 We thus expect this reconstruction approach to substantially expand 
 the cosmological information including BAO and RSD for dense low-redshift 
-large scale structure sureveys including for example SDSS main sample, DESI 
-BGS, and 21 cm intensity mapping initiatives.
+large scale structure surveys including for example SDSS main sample, DESI 
+BGS, and 21 cm intensity mapping surveys.
 \end{abstract}
 
 \pacs{}
@@ -114,7 +114,7 @@ measurements of the BAO scale \cite{2012nikhil,2012Anderson,2014K,2014Anderson,2
 However, the density field reconstruction methods based on the linearized 
 continuity equation only captures the shift terms from large-scale
 linear bulk flows \cite{2007ESW,2009PWC,2009NWP,2012TZ,2014Tassev,2016Seo}.
-Recently a new reconstruction method has been proposed by Ref. \cite{2016HMZ}. 
+Recently a new reconstruction method has been proposed in Ref. \cite{2016HMZ}. 
 (See also Refs. \cite{2017Marcel,2017Shi} for different implementations but 
 based on the same principle.)
 The new method solves a nonlinear bijective mapping between the Eulerian 
@@ -130,7 +130,7 @@ in the near future.
 Most nonlinear reconstruction methods developed recently focus on improving 
 measurements of the linear BAO signal \cite{2016HMZ,2017Marcel,2017Shi,2017US}.
 The current standard reconstruction also only works for reversing the nonlinear
-degradation of the BAO feature in galaxy redshift surverys, though different
+degradation of the BAO feature in galaxy redshift surveys, though different
 conventions for the RSD effect are adopted. (See Ref. \cite{2016Seo} for more
 discussions about different RSD conventions.) 
 The RSD effect is also one of the most powerful probes of the Universe, 
@@ -177,9 +177,9 @@ Appendix \ref{appendix:A} shows the statistical properties of Lagrangian
 displacements. 
 In Appendix \ref{appendix:B} and \ref{appendix:C}, we present the 
 study of Lagrangian velocities and shift velocities.
+Appendix \ref{appendix:D} shows the RSD reconstruction results for halos.
 Appendix \ref{appendix:E} describes how to implement nonlinear reconstruction
 in the presence of mask.
-Appendix \ref{appendix:D} shows the RSD reconstruction results for halos.
 
 %=======================================
 
@@ -236,7 +236,7 @@ where
 \bea
 \bmp^s(\bmq)=\bmp(\bmq)+{\bmv^s(\bmq)}/{aH}.
 \eea
-Here $\bmv^s(\bmx)\equiv[\hat{z}\cdot\bmv(\bmx)]\hat{z}$ is called the {\it shift velocity}.
+Here $\bmv^s(\bmq)\equiv[\hat{z}\cdot\bmv(\bmq)]\hat{z}$ is called the {\it shift velocity}.
 The nonlinear density field in redshift space at $\bms$ is 
 \bea
 \label{eq:mc_rsd}
@@ -261,7 +261,7 @@ We define a coordinate transformation that is a pure gradient,
 \bea
 s^i=\xi^{\mu}\delta^i_{\mu}+\frac{\partial\phi^s}{\partial\xi^{\nu}}\delta^{i\nu},
 \eea
-where $\phi^s(\xi)$ is the {\it displacement potential}. 
+where $\phi^s(\bmxi)$ is the {\it displacement potential}. 
 The potential isobaric gauge is unique as long as we require the coordinate 
 transformation defined above is positive definite, i.e., $\mr{det}(\partial s^i/\partial\xi^{\alpha})>0$. 
 It becomes analogous to synchronous gauge and Lagrangian coordinates before 
@@ -275,7 +275,7 @@ See Ref. \cite{2016HMZ} for the details of this calculation.
 
 The gradient of the reconstructed  displacement potential $\nabla_{\bmxi}\phi^s(\bmxi)$ provides an estimate of the redshift space displacement $\bmp^s(\bmq)$.
 We define the negative Laplacian of the reconstructed displacement potential 
-the reconstructed density field,
+the {\it reconstructed density field},
 \bea
 \label{eq:density}
 \delta_r^s(\bmxi)=-\nabla_{\bmxi}\cdot\nabla_{\bmxi}\phi^s(\bmxi)=-\nabla^2_{\bmxi}\phi^s(\bmxi).
@@ -315,7 +315,7 @@ reconstruction of the redshift space distortions.
 
 Notice that the shift velocity $\bmv^s(\bmq)$ is different from $\bmv(\bmq)$, 
 where the former corresponds to the $z$-component of the latter.
-The Lagrangian velocites $\bmv_{E}$ and $\bmv_{B}$ describe the growth of the 
+The Lagrangian velocities $\bmv_{E}$ and $\bmv_{B}$ describe the growth of the 
 Lagrangian displacements $\bmp_{E}$ and $\bmp_{B}$, respectively. 
 The statistical properties of the Lagrangian displacements have been studied in
 Appendix \ref{appendix:A}, while the Lagrangian and shift velocities have been
@@ -325,7 +325,7 @@ investigated in Appendix \ref{appendix:B} and Appendix \ref{appendix:C}.
 \section{Performance tests}
 \label{sec:prf}
 
-To test the performace of reconstruction with redshift space density field, 
+To test the performance of reconstruction with redshift space density field, 
 we use a set of ten $N$-body simulations run with the ${\tt CUBEP^3M}$ code 
 \cite{2013code}. These simulations evolve $1024^3$ dark matter particles in 
 a cubic box of length $600\ \mr{Mpc}/h$.
@@ -417,9 +417,9 @@ averaged over ten simulation to reduce the cosmic variance.
 \end{center}
 \vspace{-0.7cm}
 \caption{The cross-correlation coefficients with the initial conditions for the
-    nonlinear density field (solid line), the reconstructed density field 
-    (thick-dashed line), and the nonlinear (dotted line) and reconstructed 
-    (thin-dashed line) density field without redshift space distortions.
+    nonlinear density field (thick solid line), the reconstructed density field 
+    (thick dashed line), and the nonlinear (thin sold line) and reconstructed 
+    (thin dashed line) density field without redshift space distortions.
     The correlation with the linear field for the redshift space field after 
     reconstruction is better than $50\%$ at $k\lesssim0.6\ h/\mr{Mpc}$ and 
     $80\%$ at $k\lesssim0.3\ h/\mr{Mpc}$.}
@@ -427,10 +427,10 @@ averaged over ten simulation to reduce the cosmic variance.
 \end{figure}
 
 We correlate the nonlinear density field $\delta(\bmk)$ and the reconstructed 
-density field $\delta_r(\bmk)$ without the RSD effect with the linear density 
+density field $\delta_r(\bmk)$ in real space with the linear density 
 $\delta_L(\bmk)$.
 For the redshift space density field $\delta_L^s(\bmk)$ and the reconstructed
-density field $\delta_r^s(\bmk)$, we intead correlate them with the redshift 
+density field $\delta_r^s(\bmk)$, we instead correlate them with the redshift 
 space displacement divergence,
 \bea
 \delta^s_L(\bmk)=-i\bmk\cdot\bmp^s_L(\bmk)=(1+f\mu^2)\delta_L(\bmk),
@@ -464,7 +464,7 @@ scale fluctuations of real space density field.
 \end{center}
 \vspace{-0.7cm}
 \caption{The two-dimensional cross-correlation coefficient of the reconstructed
-density field $\delta_r^s(\bmk)$ with the redshift space linear density field 
+density field $\delta_r^s(\bmk)$ with the redshift space linear field 
 $\delta_L^s(\bmk)=(1+f\mu^2)\delta_L(\bmk)$.}
 \label{fig:cc_Ls}
 \end{figure}
@@ -478,13 +478,13 @@ One reason for this is that the Lagrangian velocity $\bmv(\bmq)$ is much more
 nonlinear than the Lagrangian displacement $\bmp(\bmq)$. The Lagrangian 
 displacement is an integral with respect to time of the Lagrangian velocity,
 \bea
-\bmp(\bmq,\tau)=\int_0^t\bmv(\bmq,\tau')d\tau'.
+\bmp(\bmq,t)=\int_0^t\bmv(\bmq,t')/a(t')dt'.
 \eea
 At higher redshifts the velocity field is more linear than the velocity field 
 at later time. The Lagrangian displacement is a linear combination of velocities
 at different redshifts with different amount of nonlinearities, while the 
 present day Lagrangian velocity corresponds to the most nonlinear contribution
-to the displacement. More details about this discussion is presented in Appendix
+to the displacement. More details about this are presented in Appendix
 \ref{appendix:A} and \ref{appendix:B}.
 Since the combination of $\nabla\cdot\bmp$ and $\nabla\cdot\bmv^s/aH$ is more
 nonlinear than $\nabla\cdot\bmp$ and most power of $\nabla\cdot\bmv^s$ is 
@@ -595,12 +595,12 @@ The ratio between the two power spectra is larger than $0.5$ at $k\lesssim0.5\ h
 $\mu$ bins around $\mu=1$. Again, we note a deficit in power along the line of
 sight direction. This is because the shift velocity divergence 
 $\nabla\cdot\bmv^s$ is more nonlinear than displacement and the reconstruction
-misses the $B$-mode shift velicity $\bmv^s_B$ as we have discussed above.
+misses the $B$-mode shift velocity $\bmv^s_B$ as we have discussed above.
 Figure \ref{fig:shape_Es} shows the power spectrum of the nonlinear transfer
 function filtered reconstructed field divided by the nonlinear power spectrum.
 The ratio between the two power spectra is larger than $0.5$ at $k\lesssim0.6\ h/\mr{Mpc}$ for $\mu$ bins around $\mu\sim0$ and $k\lesssim0.5\ h/\mr{Mpc}$ for
 $\mu$ bins around $\mu\sim1$. Here the missed power along the line of sight is
-solely due to the unrecovered $B$-mode shift velocity $\bmv^s_B$.
+solely due to the missed $B$-mode shift velocity $\bmv^s_B$.
 
 The transfer function introduced above is similar to the Wiener filter. 
 The reconstructed density field can be written as 
@@ -720,7 +720,7 @@ respectively, reducing the correlations with the real $E$-mode displacements.
 \includegraphics[width=0.48\textwidth]{fb.eps}
 \end{center}
 \vspace{-0.7cm}
-\caption{The cross-correlation coefficients of the recontructed displacement
+\caption{The cross-correlation coefficients of the reconstructed displacement
     components with the nonlinear displacement components (solid, dotted, dashed
     lines are for $x,y,z$-components respectively) and the reconstructed
 density field with the nonlinear displacement divergence.}
@@ -733,7 +733,9 @@ density field with the nonlinear displacement divergence.}
 \end{center}
 \vspace{-0.7cm}
 \caption{The cross-correlation coefficient of the reconstructed displacement
-with the the Lagrangian velocity.}
+with the Lagrangian velocity. The correlation for each component is larger
+than $0.5$ at $k\lesssim0.43\ h/\mr{Mpc}$, much smaller than the scale where 
+the nonlinear density field correlates with the linear density field.}
 \label{fig:cc_vel}
 \end{figure}
 
@@ -767,29 +769,31 @@ nonlinear reconstruction to real space halo fields \cite{2017Yu}.
 The new reconstruction method requires a higher number density
 $\bar{n}\geq10^{-3}\ (h/\mr{Mpc})^3$ to have a better performance than the 
 standard reconstruction method \cite{2017Yu}.
-In this paper we show RSD will further degrade the performance due to the nonlinearity of the shift velocity and the small scale random velocity dispersion.
+In this paper we show that RSD will further degrade the performance due to the 
+nonlinearity of the shift velocity and the small scale random velocity 
+dispersion.
 Nevertheless, we still expect the new method to substantially improve the 
 precision of the measured BAO scale of dense low redshift large scale 
 structure surveys, including SDSS main sample, DESI BGS, and 21 cm intensity
-mapping initiatives, while the improvement over standard reconstruction for
+mapping, while the improvement over standard reconstruction for
 less dense high redshift samples like BOSS LOWZ and CMASS will be moderate.
 
-To apply nonlinear reconstruction to observations, we need a continuous galaxy
-density field without any hole or masked region. A practical issue related to 
-this is the boundary of a survey region, which is not the periodic simulation 
-box. This problem can be solved by embedding the observed galaxy density field 
-into a uniform background. We have demonstrated a simple test about this 
-solution in Appendix \ref{appendix:E}. 
 We have applied reconstruction to halo density fields in redshift space. 
 The two-dimensional correlation coefficients of the reconstructed density field
 with the linear initial conditions are presented in Appendix \ref{appendix:D}.
+To apply nonlinear reconstruction to observations, we need to consider several 
+complicated effects. A practical issue related to this is the boundary of a 
+survey region, which is not the periodic simulation box. 
+This problem can be solved by embedding the observed galaxy density field 
+into a uniform background. We have demonstrated a simple test about this 
+solution in Appendix \ref{appendix:E}. 
 The practical application of nonlinear reconstruction to SDSS galaxy samples 
 will be studied in a future paper \cite{2017Zhu}.
 
 The most innovative result of this paper is that the nonlinear reconstruction
 method can improve not only the BAO measurement but also the RSD measurement.
 The nonlinear mapping solved from the anisotropic redshift space density field
-includes the $E$-mode shift veclocity $\bm{v}^s_E$, which contains cosmological
+includes the $E$-mode shift velocity $\bm{v}^s_E$, which contains cosmological
 information about the growth of structure. 
 The reconstructed density field shares many similar features as the redshift 
 space density field like the large scale squashing effect and small scale 
@@ -827,7 +831,7 @@ This saves a large amount of computation costs when applying reconstruction to
 galaxy surveys to improve BAO and RSD measurements.
 
 The fact that the reconstructed displacements correlate with the Lagrangian 
-velocites to nonlinear scales in Lagrangian space implies we can construct
+velocities to nonlinear scales in Lagrangian space implies we can construct
 new peculiar velocity reconstruction schemes based on this relation.
 The current peculiar velocity reconstruction methods are often based on the 
 linearized continuity equation like the one used to measure the kSZ effect 
@@ -843,7 +847,7 @@ density through
 \eea
 where $W_R(k)$ is a smoothing function with the characteristic scale $R$.
 The smoothing scale should be chosen close to the scale where linear theory 
-breaks down \cite{2015marcel,2015BAOsm,2016Seo}. 
+breaks down \cite{2015marcel,2016Seo}. 
 To make the above linear approximation valid, the nonlinear density field 
 usually needs to be smoothed on scales $\sim10\ \mr{Mpc}/h$ to remove small
 scale nonlinearities. This is because all quantities defined in Eulerian space
@@ -899,8 +903,88 @@ future paper \cite{2017Yu2}.
 \section{Conclusions}
 \label{sec:cls}
 
-Reconstruction errors/noises...
+In this paper we apply nonlinear reconstruction to redshift space nonlinear
+dark matter density field and reconstruct the displacement potential that 
+describes the mapping from initial Lagrangian coordinates to final redshift
+space coordinates. We undo the shifts from Lagrangian positions to 
+redshift space positions by mapping the nonlinear density field into a uniform
+field and reduce the associated nonlinearities significantly.
+The reconstructed density field is defined as the negative divergence of the reconstructed displacement or the negative Laplacian of the displacement potential.
+The cross correlation coefficient between the reconstructed density field and 
+the linear initial conditions is larger than $0.5$ at $k\lesssim0.6 h/\mr{Mpc}$
+and $0.8$ at $k\lesssim0.3\ h/\mr{Mpc}$. We note that the reconstructed density
+field shares similar properties with the redshift space nonlinear density field,
+including the nonlinear Finger of God effect and linear Kaiser effect. 
+However, the reconstructed density field involves much less nonlinearities 
+related with the shifts from Lagrangian positions to redshift space positions.
+Therefore we expect this nonlinear reconstruction approach to substantially
+improve the cosmological information content of BAO and RSD for dense large
+scale structure surveys.
 
+Reconstruction of the nonlinear displacement field is not perfect and limited 
+by several factors, including shell crossing, vorticity and grid limiter.
+The reconstruction is not sensitive to the parameters used for grid limiter 
+like the maximal compression factor and expansion volume limit (see tests presented in Ref. \cite{2016HMZ}). The performance is mostly limited by shell crossing
+and vorticity. Note that the $B$-mode displacement will also change the mass 
+distribution in the Universe in addition to the $E$-mode displacement. 
+However, due to the limited degree of freedom, we can only reconstruct a scalar
+field (displacement potential) from the observed density field which is caused 
+by both $E$- and $B$-mode displacements; as a result, this will induce errors 
+in the reconstructed displacement field. The mapping from Lagrangian coordinates
+to redshift space coordinates is not unique once shell crossing occurs. 
+We can still define a coordinate system which we refer as potential isobaric
+gauge/coordinates where the mass per volume element is approximately constant.
+However, the reconstructed displacement is not accurate in the regime where 
+shell crossing occurs. The shell crossing induces a similar effect like the 
+vorticity; they both cause changes in the mass distribution in the Universe,
+but we treat the observed density field as a field not affected by them.
+To disentangle these two effects, we need to consider reconstruction in the 
+1D case, where the displacement field has no $B$-mode component. By performing
+reconstruction in the 1D Universe, we can estimated the effect solely induced
+by shell crossing \cite{2016HMZ1}. 
+
+In addition to the effects discussed above, the correlation of the reconstructed
+density with the linear initial conditions is also affect by the inherent
+nonlinearities of the Lagrangian displacement and velocity. 
+Although Lagrangian quantities like the displacement and velocity are free of 
+shift terms, they are still affected by structure formation, which induce 
+inherent nonlinearities \cite{2012TZ}. 
+These inherent nonlinearities can not be removed
+by nonlinear reconstruction. In summary, the performance of initial condition
+reconstruction is limited by residual shift nonlinearities due to imperfect 
+reconstruction of the nonlinear displacement field, nonlinearities of the 
+displacement and velocity field.
+
+The nonlinear reconstruction approach provides a new route to measure the RSD
+effect. Instead of modeling the complicated mapping from real to redshift space,
+we can reconstruct the Lagrangian displacement and velocity directly and use
+the reconstructed density field to measure the anisotropic effects due to the
+peculiar velocity. When try to model RSD, we are creating nonlinear effects to
+make the theoretical power spectrum looks like the nonlinear power spectrum.
+This still does not improve the information in power spectrum of the observed 
+density field from surveys. However, reconstruction can reduce nonlinearities and reverse the mapping from Lagrangian coordinates to redshift space coordinates.
+The density field after reconstruction can be described using linear theory on 
+scales where the redshift space density field already needs to be modeled using
+higher order perturbation theory.
+
+The correlation of the reconstructed displacement with the Lagrangian velocity
+is much better than the correlation between density and velocity in Eulerian 
+space. This implies that the new peculiar velocity reconstruction scheme can be
+constructed based on the relation between Lagrangian displacement and velocity.
+Since much less nonlinearities is involved in the new reconstruction schemes,
+we expect the performance would be better than the Eulerian space based velocity
+reconstruction methods. We propose several velocity reconstruction methods here 
+and detailed tests will presented in future.
+
+In this paper we show that the nonlinear reconstruction not only works in real 
+space but also can be implemented in redshift space. 
+In addition to improving the linear BAO signals, we find that this nonlinear
+approach can also improve the RSD measurements since the reconstructed density
+field shares similar features as the redshift space nonlinear density field and 
+much more linear modes are recovered after reconstruction. 
+This could substantially recover cosmological information about BAO and RSD for
+dense low redshift large structure surveys such as SDSS MGS, DESI BGS and 21 cm
+intensity mapping surveys.
 
 %=======================================
 
@@ -929,7 +1013,8 @@ Research $\&$ Innovation.
 The large scale nonlinear displacement field is well described by the Zeldovich
 approximation for $k\lesssim1\ h/\mr{Mpc}$. The nonlinear $E$-mode displacement
 becomes important at $k\gtrsim1\ h/\mr{Mpc}$. The $B$-mode displacement only 
-matters on very small scales for $k\gtrsim10\ h/\mr{Mpc}$.}
+matters on very small scales for $k\gtrsim10\ h/\mr{Mpc}$. The power spectra 
+are computed using two sets of simulations with different resolutions.}
 \label{fig:pk_disp}
 \end{figure}
 
@@ -942,7 +1027,7 @@ where $\bmp_E=(\bmk\cdot\bmp)\bmk/k^2$ and $\bmp_B=\bmp-\bmp_E$.
 The $E$-mode displacement can be completely described by its divergence 
 $\delta_E=-\nabla\cdot\bmp_E$. 
 To see how the $E$-mode displacement correlates with the initial linear 
-displacement, we carry out a further decomposion,
+displacement, we carry out a further decomposition,
 \bea
 \bmp_E(\bmq)=\bmp_E^{(l)}(\bmq)+\bmp_E^{(nl)}(\bmq),
 \eea
@@ -958,7 +1043,7 @@ Then the nonlinear displacement is composed by three components
 \bea
 \bmp(\bmq)=\bmp^{(l)}_E(\bmq)+\bmp^{(nl)}_E(\bmq)+\bmp_B(\bmq).
 \eea
-To measure the power spectra of these three components, we use two sets of simulation. The large box simulation involves $1024^3$ dark matter particles in a 
+To measure the power spectra of these three components, we use two sets of simulations. The large box simulation involves $1024^3$ dark matter particles in a 
 cubic box of length $600\ h/\mr{Mpc}$ and the small box simulation involves
 $1024^3$ dark matter particles in a cubic box of length $150\ h/\mr{Mpc}$.
 Each set of simulation have ten independent realizations with independent random
@@ -1076,7 +1161,7 @@ The values of power spectrum are shown in the logarithmic scale.}
 
 The shift velocity corresponds to the $z$-component of the Lagrangian velocity,
 \bea
-\bmv^s(\bmq)=v_z(\bmq)\hat{\bm{z}},
+\bmv^s(\bmq)=v_z(\bmq)\hat{z},
 \eea
 which describes the shift of a particle from the real space position to the 
 redshift space position. We can write the shift velocity as 
@@ -1085,7 +1170,7 @@ redshift space position. We can write the shift velocity as
 \eea
 where 
 \bea
-\bmv^s_E(\bmk)=\bigg(\frac{k_xk_zv_z(\bmk)}{k^2},\frac{k_yk_zv_z(\bmk)}{k^2},\frac{k_zk_zv_z(\bmk)}{k^2}\bigg)v_z(\bmk),
+\bmv^s_E(\bmk)=\bigg(\frac{k_xk_zv_z(\bmk)}{k^2},\frac{k_yk_zv_z(\bmk)}{k^2},\frac{k_zk_zv_z(\bmk)}{k^2}\bigg),
 \eea
 and 
 \bea
@@ -1123,49 +1208,33 @@ $k\lesssim0.1\ h/\mr{Mpc}$, while the other power spectra can be well described
 by linear theory at $k\lesssim0.15\ h/\mr{Mpc}$. The power of $v^s_{Bz}$ becomes
 larger on smaller scales and dominates over $v^s_{Ez}$ at $k=0.36\ h/\mr{Mpc}$.
 This behavior is not predicted within the linear perturbation theory. 
-The strong nonlinearities in the shift velocity field cause the divergence of 
-$P_{v^s_{Bz}}(k)$. This implies that the random velocity dispersion is large on 
+The strong nonlinearities in the shift velocity field cause the large power of 
+$P_{v^s_{Bz}}(k)$ on small scales. This implies that the random velocity dispersion is large on 
 small scales, which leads to the so-called Finger of God effect.
 
 Figure \ref{fig:pk_deltaV} shows the two-dimensional power spectrum of the 
 negative divergence of the shift velocity $-\nabla\cdot\bmv^s$.
-We plot the logarithmic value of the power spectrum for display purpose.
+We plot the power spectrum in logarithmic scale for visualization purpose.
 Most power of $-\nabla\cdot\bmv^s$ is concentrated in the $\mu$ bins close to 
 $\mu\sim1$ as expected. This causes part of the degradation of reconstruction
 performance along the line of sight direction.
 
-\section{Reconstruction with survey mask}
-\label{appendix:E}
-
-\begin{figure}[tbp]
-\vspace{-0.7cm}
-\begin{center}
-\includegraphics[width=0.48\textwidth]{map0512-0256-all.eps}
-\end{center}
-\vspace{-0.7cm}
-\caption{A slice of the density field from the high-resolution simulation. 
-The curvilinear grid shows the Eulerian coordinate of each grid point of the 
-potential isobaric coordinate. The reconstruction works very well within the 
-spherical region though near the spherical boundary there are some artificial 
-features caused by the discontinuities.}
-\label{fig:mask}
-\end{figure}
-
-To apply nonlinear reconstruction to real observation data, we need to consider
-the boundary of a survey volume. In this Appendix  we present a simple test of 
-reconstruction without the periodic boundary conditions. We take a spherical 
-region with radius $140.625\ h/\mr{Mpc}$ from the high-precision simulation and
-set the density fluctuations $\rho(\bmx)/\bar{\rho}$ in the outer space to 1.
-Then we perform reconstruction with this density field.
-Figure \ref{fig:mask} shows a slice through the density field. We also plot the 
-Eulerian positions of a uniform grid of potential isobaric coordinates on the
-density field slice. The reconstruction works very well within the spherical
-region though near the spherical boundary there are some artificial features
-caused by the discontinuities. However, this will cause little degradation of 
-reconstruction as the measure of a 2D boundary is nearly zero in the 3D space.
-
 \section{Reconstruction with halos}
 \label{appendix:D}
+
+\begin{figure*}[tbp]
+\vspace{-0.3cm}
+\begin{center}
+\includegraphics[width=0.32\textwidth]{0.000anixcc_deltaRsxLs-0_31.eps}
+\includegraphics[width=0.32\textwidth]{0.000anixcc_deltaRsxLs-1_31.eps}
+\includegraphics[width=0.32\textwidth]{0.000anixcc_deltaRsxLs-2_31.eps}
+\end{center}
+\vspace{-0.7cm}
+\caption{The two-dimensional cross correlation coefficients of the halo 
+reconstructed field with the linear field $(b_1+f\mu^2)\delta_L(\bmk)$ for
+$\bar{n}=2.77\times10^{-2}$, $2.77\times10^{-3}$, $2.77\times10^{-4}\ (h/\mr{Mpc})^3$ (from left to right), respectively.}
+\label{fig:xcc_ha}
+\end{figure*}
 
 The dark matter field is nearly constant in Lagrangian space, while the halo 
 field is not uniform in Lagrangian space. 
@@ -1208,19 +1277,35 @@ as the result obtained with the dark matter density field, but the performance
 degrades with the lower number density. And also the less dense sample suffers
 less from the RSD effect.
 
-\begin{figure*}[tbp]
-\vspace{-0.3cm}
+\section{Reconstruction with survey mask}
+\label{appendix:E}
+
+\begin{figure}[tbp]
+\vspace{-0.7cm}
 \begin{center}
-\includegraphics[width=0.32\textwidth]{0.000anixcc_deltaRsxLs-0_31.eps}
-\includegraphics[width=0.32\textwidth]{0.000anixcc_deltaRsxLs-1_31.eps}
-\includegraphics[width=0.32\textwidth]{0.000anixcc_deltaRsxLs-2_31.eps}
+\includegraphics[width=0.48\textwidth]{map0512-0256-all.eps}
 \end{center}
 \vspace{-0.7cm}
-\caption{The two-dimensional cross correlation coefficientsof the halo 
-reconstructed field with the linear field $(b_1+f\mu^2)\delta_L(\bmk)$ for
-$\bar{n}=2.77\times10^{-2}$, $2.77\times10^{-3}$, $2.77\times10^{-4}\ (h/\mr{Mpc})^3$ (from left to right), respectively.}
-\label{fig:xcc_ha}
-\end{figure*}
+\caption{A slice of the density field from the high-resolution simulation. 
+The curvilinear grid shows the Eulerian coordinate of each grid point of the 
+potential isobaric coordinate. The reconstruction works very well within the 
+spherical region though near the spherical boundary there are some artificial 
+features caused by the discontinuities.}
+\label{fig:mask}
+\end{figure}
+
+To apply nonlinear reconstruction to real observation data, we need to consider
+the boundary of a survey volume. In this Appendix  we present a simple test of 
+reconstruction without the periodic boundary conditions. We take a spherical 
+region with radius $140.625\ h/\mr{Mpc}$ from the high-precision simulation and
+set the density fluctuations $\rho(\bmx)/\bar{\rho}$ in the outer space to 1.
+Then we perform reconstruction with this density field.
+Figure \ref{fig:mask} shows a slice through the density field. We also plot the 
+Eulerian positions of a uniform grid of potential isobaric coordinates on the
+density field slice. The reconstruction works very well within the spherical
+region though near the spherical boundary there are some artificial features
+caused by the discontinuities. However, this will cause little degradation of 
+reconstruction as the measure of a 2D boundary is nearly zero in the 3D space.
 
 \bibliographystyle{apsrev}
 \bibliography{3d}
